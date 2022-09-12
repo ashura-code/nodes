@@ -5,28 +5,27 @@ const a = () =>{
 // a();
 // in node , we dont have window or document objects as it is only provided by browsers.
 
- // console.log(window) ----> prodiuces an error.
+//  console.log(window) ----> prodiuces an error.
 
 
- //Node core
+//  Node core
 
- //In node we have global instead of window and document objects.
+//  In node we have global instead of window and document objects.
 
 
 // global.a = "hello";
 // console.log(global.message);
 
 // The probem with global scope:
-   //  If we declare a global variable or a fucntion , and we create a new file and decfine the same 
-   //     variable or function with different values or data ,then the new one will override the existing one.
+//     If we declare a global variable or a fucntion , and we create a new file and decfine the same 
+//        variable or function with different values or data ,then the new one will override the existing one.
 
-//Solution :
-    //modular fucntion (making functions in small modules).
-    // Every file in a node application is considered as a module.
-    // If you want to declare a function as public ,  you have to explicitly declare the function as public.
+// Solution :
+//     modular fucntion (making functions in small modules).
+//     Every file in a node application is considered as a module.
+//     If you want to declare a function as public ,  you have to explicitly declare the function as public.
    
-
-    //There is one module called main module in every node application.
+//     There is one module called main module in every node application.
 
 
 //  console.log(module);  //there exists module which return teh path of the main module.
@@ -34,9 +33,12 @@ const a = () =>{
 
 // How to create and load modules
 
-const tutorial = require('./tutorial');
+// const tutorial = require('./tutorial');
 
-console.log(tutorial(1,1));
+// console.log(tutorial.Stream);
+
+
+
 
 
 
